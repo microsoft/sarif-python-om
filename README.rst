@@ -3,6 +3,26 @@ sarif-python-om
 
 Python classes for the SARIF object model
 
+Usage
+=====
+::
+
+    pip install sarif-python-om
+
+    import sarif_om
+
+Description
+===========
+
+This module contains classes for the object model defined by the
+`Static Analysis Results Interchange Format (SARIF) Version 2.1.0 <https://docs.oasis-open.org/sarif/sarif/v2.1.0/cs01>`_ file format,
+an `OASIS <https://www.oasis-open.org>`_ `Committee Specification <https://www.oasis-open.org/news/announcements/static-analysis-results-interchange-format-sarif-v2-1-0-from-the-sarif-tc-is-an-a>`_.
+
+To learn more about SARIF and find resources for working with it, you can visit the `SARIF Home Page <http://sarifweb.azurewebsites.net/>`_.
+
+The classes in this module were generated from the `SARIF JSON schema <https://docs.oasis-open.org/sarif/sarif/v2.1.0/cs01/schemas/sarif-schema-2.1.0.json>`_
+by the `jschema-to-python <https://github.com/microsoft/jschema-to-python>`_ code generator.
+
 Contributing
 ============
 
