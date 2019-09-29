@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class ArtifactContent(object):
     """Represents the contents of an artifact."""
+
     binary = attr.ib(default=None)
     properties = attr.ib(default=None)
     rendered = attr.ib(default=None)

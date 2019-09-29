@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Artifact(object):
     """A single artifact. In some cases, this artifact might be nested within another artifact."""
+
     contents = attr.ib(default=None)
     description = attr.ib(default=None)
     encoding = attr.ib(default=None)

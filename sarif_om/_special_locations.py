@@ -2,8 +2,10 @@
 
 import attr
 
+
 @attr.s
 class SpecialLocations(object):
     """Defines locations of special significance to SARIF consumers."""
+
     display_base = attr.ib(default=None)
     properties = attr.ib(default=None)

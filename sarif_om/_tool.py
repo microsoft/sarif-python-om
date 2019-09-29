@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Tool(object):
     """The analysis tool that was run."""
+
     driver = attr.ib()
     extensions = attr.ib(default=None)
     properties = attr.ib(default=None)

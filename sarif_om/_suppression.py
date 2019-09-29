@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Suppression(object):
     """A suppression that is relevant to a result."""
+
     kind = attr.ib()
     guid = attr.ib(default=None)
     justification = attr.ib(default=None)

@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class ToolComponentReference(object):
     """Identifies a particular toolComponent object, either the driver or an extension."""
+
     guid = attr.ib(default=None)
     index = attr.ib(default=-1)
     name = attr.ib(default=None)

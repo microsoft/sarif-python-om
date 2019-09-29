@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Location(object):
     """A location within a programming artifact."""
+
     annotations = attr.ib(default=None)
     id = attr.ib(default=-1)
     logical_locations = attr.ib(default=None)

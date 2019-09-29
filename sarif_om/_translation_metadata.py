@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class TranslationMetadata(object):
     """Provides additional metadata related to translation."""
+
     name = attr.ib()
     download_uri = attr.ib(default=None)
     full_description = attr.ib(default=None)

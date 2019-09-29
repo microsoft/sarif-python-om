@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class ReportingDescriptorReference(object):
     """Information about how to locate a relevant reporting descriptor."""
+
     guid = attr.ib(default=None)
     id = attr.ib(default=None)
     index = attr.ib(default=-1)

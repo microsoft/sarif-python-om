@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class ConfigurationOverride(object):
     """Information about how a specific rule or notification was reconfigured at runtime."""
+
     configuration = attr.ib()
     descriptor = attr.ib()
     properties = attr.ib(default=None)

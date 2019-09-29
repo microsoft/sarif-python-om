@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class ArtifactLocation(object):
     """Specifies the location of an artifact."""
+
     description = attr.ib(default=None)
     index = attr.ib(default=-1)
     properties = attr.ib(default=None)

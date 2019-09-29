@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Stack(object):
     """A call stack that is relevant to a result."""
+
     frames = attr.ib()
     message = attr.ib(default=None)
     properties = attr.ib(default=None)

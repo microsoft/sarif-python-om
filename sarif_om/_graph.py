@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Graph(object):
     """A network of nodes and directed edges that describes some aspect of the structure of the code (for example, a call graph)."""
+
     description = attr.ib(default=None)
     edges = attr.ib(default=None)
     nodes = attr.ib(default=None)

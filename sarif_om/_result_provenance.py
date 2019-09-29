@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class ResultProvenance(object):
     """Contains information about how and when a result was detected."""
+
     conversion_sources = attr.ib(default=None)
     first_detection_run_guid = attr.ib(default=None)
     first_detection_time_utc = attr.ib(default=None)

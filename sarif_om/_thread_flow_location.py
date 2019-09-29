@@ -2,12 +2,14 @@
 
 import attr
 
+
 @attr.s
 class ThreadFlowLocation(object):
     """A location visited by an analysis tool while simulating or monitoring the execution of a program."""
+
     execution_order = attr.ib(default=-1)
     execution_time_utc = attr.ib(default=None)
-    importance = attr.ib(default='important')
+    importance = attr.ib(default="important")
     index = attr.ib(default=-1)
     kinds = attr.ib(default=None)
     location = attr.ib(default=None)

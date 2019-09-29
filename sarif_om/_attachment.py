@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Attachment(object):
     """An artifact relevant to a result."""
+
     artifact_location = attr.ib()
     description = attr.ib(default=None)
     properties = attr.ib(default=None)

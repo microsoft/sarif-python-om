@@ -2,14 +2,16 @@
 
 import attr
 
+
 @attr.s
 class Notification(object):
     """Describes a condition relevant to the tool itself, as opposed to being relevant to a target being analyzed by the tool."""
+
     message = attr.ib()
     associated_rule = attr.ib(default=None)
     descriptor = attr.ib(default=None)
     exception = attr.ib(default=None)
-    level = attr.ib(default='warning')
+    level = attr.ib(default="warning")
     locations = attr.ib(default=None)
     properties = attr.ib(default=None)
     thread_id = attr.ib(default=None)

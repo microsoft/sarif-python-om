@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Run(object):
     """Describes a single run of an analysis tool, and contains the reported output of that run."""
+
     tool = attr.ib()
     addresses = attr.ib(default=None)
     artifacts = attr.ib(default=None)
@@ -17,7 +19,7 @@ class Run(object):
     external_property_file_references = attr.ib(default=None)
     graphs = attr.ib(default=None)
     invocations = attr.ib(default=None)
-    language = attr.ib(default='en-US')
+    language = attr.ib(default="en-US")
     logical_locations = attr.ib(default=None)
     newline_sequences = attr.ib(default=['\r\n', '\n'])
     original_uri_base_ids = attr.ib(default=None)

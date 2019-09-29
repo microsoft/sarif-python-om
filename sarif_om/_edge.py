@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Edge(object):
     """Represents a directed edge in a graph."""
+
     id = attr.ib()
     source_node_id = attr.ib()
     target_node_id = attr.ib()

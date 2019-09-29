@@ -2,7 +2,9 @@
 
 import attr
 
+
 @attr.s
 class PropertyBag(object):
     """Key/value pairs that provide additional information about the object."""
+
     tags = attr.ib(default=None)

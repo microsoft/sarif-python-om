@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class EdgeTraversal(object):
     """Represents the traversal of a single edge during a graph traversal."""
+
     edge_id = attr.ib()
     final_state = attr.ib(default=None)
     message = attr.ib(default=None)

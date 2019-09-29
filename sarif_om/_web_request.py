@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class WebRequest(object):
     """Describes an HTTP request."""
+
     body = attr.ib(default=None)
     headers = attr.ib(default=None)
     index = attr.ib(default=-1)

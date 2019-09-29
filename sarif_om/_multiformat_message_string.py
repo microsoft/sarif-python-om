@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class MultiformatMessageString(object):
     """A message string or message format string rendered in multiple formats."""
+
     text = attr.ib()
     markdown = attr.ib(default=None)
     properties = attr.ib(default=None)

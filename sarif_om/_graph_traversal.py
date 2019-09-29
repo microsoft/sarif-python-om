@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class GraphTraversal(object):
     """Represents a path through a graph."""
+
     description = attr.ib(default=None)
     edge_traversals = attr.ib(default=None)
     immutable_state = attr.ib(default=None)

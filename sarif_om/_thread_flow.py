@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class ThreadFlow(object):
     """Describes a sequence of code locations that specify a path through a single thread of execution such as an operating system or fiber."""
+
     locations = attr.ib()
     id = attr.ib(default=None)
     immutable_state = attr.ib(default=None)

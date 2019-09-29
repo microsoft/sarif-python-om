@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class PhysicalLocation(object):
     """A physical location relevant to a result. Specifies a reference to a programming artifact together with a range of bytes or characters within that artifact."""
+
     address = attr.ib(default=None)
     artifact_location = attr.ib(default=None)
     context_region = attr.ib(default=None)

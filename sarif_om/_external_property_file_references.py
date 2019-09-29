@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class ExternalPropertyFileReferences(object):
     """References to external property files that should be inlined with the content of a root log file."""
+
     addresses = attr.ib(default=None)
     artifacts = attr.ib(default=None)
     conversion = attr.ib(default=None)

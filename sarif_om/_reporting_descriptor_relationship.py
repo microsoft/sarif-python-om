@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class ReportingDescriptorRelationship(object):
     """Information about the relation of one reporting descriptor to another."""
+
     target = attr.ib()
     description = attr.ib(default=None)
     kinds = attr.ib(default=['relevant'])

@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class ArtifactChange(object):
     """A change to a single artifact."""
+
     artifact_location = attr.ib()
     replacements = attr.ib()
     properties = attr.ib(default=None)

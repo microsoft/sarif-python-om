@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class VersionControlDetails(object):
     """Specifies the information necessary to retrieve a desired revision from a version control system."""
+
     repository_uri = attr.ib()
     as_of_time_utc = attr.ib(default=None)
     branch = attr.ib(default=None)

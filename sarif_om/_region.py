@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Region(object):
     """A region within an artifact where a result was detected."""
+
     byte_length = attr.ib(default=None)
     byte_offset = attr.ib(default=-1)
     char_length = attr.ib(default=None)

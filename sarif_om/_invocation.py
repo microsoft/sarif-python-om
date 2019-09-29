@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Invocation(object):
     """The runtime environment of the analysis tool run."""
+
     execution_successful = attr.ib()
     account = attr.ib(default=None)
     arguments = attr.ib(default=None)

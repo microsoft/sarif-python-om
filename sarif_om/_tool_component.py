@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class ToolComponent(object):
     """A component, such as a plug-in or the driver, of the analysis tool that was run."""
+
     name = attr.ib()
     associated_component = attr.ib(default=None)
     contents = attr.ib(default=['localizedData', 'nonLocalizedData'])
@@ -16,7 +18,7 @@ class ToolComponent(object):
     guid = attr.ib(default=None)
     information_uri = attr.ib(default=None)
     is_comprehensive = attr.ib(default=None)
-    language = attr.ib(default='en-US')
+    language = attr.ib(default="en-US")
     localized_data_semantic_version = attr.ib(default=None)
     locations = attr.ib(default=None)
     minimum_required_localized_data_semantic_version = attr.ib(default=None)

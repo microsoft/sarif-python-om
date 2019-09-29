@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Exception(object):
     """Describes a runtime exception encountered during the execution of an analysis tool."""
+
     inner_exceptions = attr.ib(default=None)
     kind = attr.ib(default=None)
     message = attr.ib(default=None)

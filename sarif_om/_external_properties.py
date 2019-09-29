@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class ExternalProperties(object):
     """The top-level element of an external property file."""
+
     addresses = attr.ib(default=None)
     artifacts = attr.ib(default=None)
     conversion = attr.ib(default=None)

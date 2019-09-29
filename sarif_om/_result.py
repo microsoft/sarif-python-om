@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Result(object):
     """A result produced by an analysis tool."""
+
     message = attr.ib()
     analysis_target = attr.ib(default=None)
     attachments = attr.ib(default=None)
@@ -17,8 +19,8 @@ class Result(object):
     graphs = attr.ib(default=None)
     guid = attr.ib(default=None)
     hosted_viewer_uri = attr.ib(default=None)
-    kind = attr.ib(default='fail')
-    level = attr.ib(default='warning')
+    kind = attr.ib(default="fail")
+    level = attr.ib(default="warning")
     locations = attr.ib(default=None)
     occurrence_count = attr.ib(default=None)
     partial_fingerprints = attr.ib(default=None)

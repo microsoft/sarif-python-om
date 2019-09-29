@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class StackFrame(object):
     """A function call within a stack trace."""
+
     location = attr.ib(default=None)
     module = attr.ib(default=None)
     parameters = attr.ib(default=None)

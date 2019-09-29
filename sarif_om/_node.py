@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Node(object):
     """Represents a node in a graph."""
+
     id = attr.ib()
     children = attr.ib(default=None)
     label = attr.ib(default=None)

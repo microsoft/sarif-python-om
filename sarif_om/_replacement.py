@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Replacement(object):
     """The replacement of a single region of an artifact."""
+
     deleted_region = attr.ib()
     inserted_content = attr.ib(default=None)
     properties = attr.ib(default=None)

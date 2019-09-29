@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Conversion(object):
     """Describes how a converter transformed the output of a static analysis tool from the analysis tool's native output format into the SARIF format."""
+
     tool = attr.ib()
     analysis_tool_log_files = attr.ib(default=None)
     invocation = attr.ib(default=None)

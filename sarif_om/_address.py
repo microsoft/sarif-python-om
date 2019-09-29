@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Address(object):
     """A physical or virtual address, or a range of addresses, in an 'addressable region' (memory or a binary file)."""
+
     absolute_address = attr.ib(default=-1)
     fully_qualified_name = attr.ib(default=None)
     index = attr.ib(default=-1)

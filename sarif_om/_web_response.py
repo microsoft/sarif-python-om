@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class WebResponse(object):
     """Describes the response to an HTTP request."""
+
     body = attr.ib(default=None)
     headers = attr.ib(default=None)
     index = attr.ib(default=-1)

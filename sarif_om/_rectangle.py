@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Rectangle(object):
     """An area within an image."""
+
     bottom = attr.ib(default=None)
     left = attr.ib(default=None)
     message = attr.ib(default=None)

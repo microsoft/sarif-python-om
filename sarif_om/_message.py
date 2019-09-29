@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class Message(object):
     """Encapsulates a message intended to be read by the end user."""
+
     arguments = attr.ib(default=None)
     id = attr.ib(default=None)
     markdown = attr.ib(default=None)

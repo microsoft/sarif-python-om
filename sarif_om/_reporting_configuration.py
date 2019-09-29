@@ -2,11 +2,13 @@
 
 import attr
 
+
 @attr.s
 class ReportingConfiguration(object):
     """Information about a rule or notification that can be configured at runtime."""
+
     enabled = attr.ib(default=True)
-    level = attr.ib(default='warning')
+    level = attr.ib(default="warning")
     parameters = attr.ib(default=None)
     properties = attr.ib(default=None)
     rank = attr.ib(default=-1.0)

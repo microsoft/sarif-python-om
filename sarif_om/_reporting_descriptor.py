@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class ReportingDescriptor(object):
     """Metadata that describes a specific report produced by the tool, as part of the analysis it provides or its runtime reporting."""
+
     id = attr.ib()
     default_configuration = attr.ib(default=None)
     deprecated_guids = attr.ib(default=None)

@@ -2,9 +2,11 @@
 
 import attr
 
+
 @attr.s
 class CodeFlow(object):
     """A set of threadFlows which together describe a pattern of code execution relevant to detecting a result."""
+
     thread_flows = attr.ib()
     message = attr.ib(default=None)
     properties = attr.ib(default=None)
