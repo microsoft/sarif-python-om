@@ -1,7 +1,7 @@
 sarif-python-om
 ===============
 
-Python classes for the SARIF object model
+Python classes for the SARIF 2.1.0 object model
 
 Usage
 =====
