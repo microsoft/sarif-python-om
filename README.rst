@@ -27,13 +27,13 @@ Generation
 
 The classes in this module were generated from the `SARIF JSON schema <https://docs.oasis-open.org/sarif/sarif/v2.1.0/cs01/schemas/sarif-schema-2.1.0.json>`_
 by the `jschema-to-python <https://github.com/microsoft/jschema-to-python>`_ code generator,
-using the JSON schema file ``sarif-2.1.0-rtm.4.json`` and the code generation hints file ``code-gen-hints.json``
+using the final SARIF standard JSON schema file ``sarif-2.1.0-rtm.5.json`` and the code generation hints file ``code-gen-hints.json``
 at the root of the GitHub repo, with the following command line::
 
     pip install jschema-to-python
 
     py -m jschema_to_python
-        --schema-path sarif-2.1.0-rtm.4.json
+        --schema-path sarif-2.1.0-rtm.5.json
         --module-name sarif_om
         --output-directory sarif_om
         --root-class-name SarifLog
