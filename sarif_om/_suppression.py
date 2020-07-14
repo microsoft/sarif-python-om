@@ -12,4 +12,4 @@ class Suppression(object):
     justification = attr.ib(default=None, metadata={"schema_property_name": "justification"})
     location = attr.ib(default=None, metadata={"schema_property_name": "location"})
     properties = attr.ib(default=None, metadata={"schema_property_name": "properties"})
-    state = attr.ib(default=None, metadata={"schema_property_name": "state"})
+    status = attr.ib(default=None, metadata={"schema_property_name": "status"})

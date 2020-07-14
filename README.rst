@@ -1,5 +1,5 @@
-sarif-python-om
-===============
+sarif-om
+========
 
 Python classes for the SARIF 2.1.0 object model
 
@@ -7,7 +7,7 @@ Usage
 =====
 ::
 
-    pip install sarif-python-om
+    pip install sarif-om
 
     import sarif_om
 
