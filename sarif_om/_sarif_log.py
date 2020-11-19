@@ -5,7 +5,7 @@ import attr
 
 @attr.s
 class SarifLog(object):
-    """Static Analysis Results Format (SARIF) Version 2.1.0-rtm.5 JSON Schema: a standard format for the output of static analysis tools."""
+    """Static Analysis Results Format (SARIF) Version 2.1.0 JSON Schema: a standard format for the output of static analysis tools."""
 
     runs = attr.ib(metadata={"schema_property_name": "runs"})
     version = attr.ib(metadata={"schema_property_name": "version"})
