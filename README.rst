@@ -22,6 +22,24 @@ To learn more about SARIF and find resources for working with it, you can visit 
 
 The source code is available at https://github.com/microsoft/sarif-python-om.
 
+How to use
+==========
+
+.. code-block:: python
+
+  import cattrs
+  import json
+  import sys
+
+  from sarif_om import SarifLog
+
+
+  with open(sys.argv[1]) as fp:
+      data = json.load(fp)
+
+  sarif_log = cattrs.structure(data, SarifLog)
+
+
 Generation
 ==========
 
