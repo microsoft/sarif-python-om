@@ -27,18 +27,65 @@ How to use
 
 .. code-block:: python
 
-  import cattrs
-  import json
-  import sys
-
-  from sarif_om import SarifLog
+    from sarif_om import SarifLog, Run, Tool, ToolComponent, Result, Message
 
 
-  with open(sys.argv[1]) as fp:
-      data = json.load(fp)
+    sarif_log = SarifLog(
+        version="2.1.0",
+        runs=[
+            Run(
+                tool=Tool(
+                    driver=ToolComponent(
+                        name="My Static Analyzer",
+                        version="1.0.0",
+                    )
+                ),
+                results=[
+                    Result(
+                        rule_id="R001",
+                        message=Message(text="Use of uninitialized variable 'x'"),
+                    )
+                ],
+            )
+        ],
+    )
 
-  sarif_log = cattrs.structure(data, SarifLog)
+    print(sarif_log)
 
+To serialize it to plain dict or JSON:
+
+.. code-block:: python
+
+    from sarif_om import to_dict, to_json
+
+    print(to_json(sarif_log))
+    print(to_dict(sarif_log))
+
+To deserialize dict/JSON data to ``sarif_om.SarifLog``:
+
+.. code-block:: python
+
+    import json
+    from sarif_om import from_dict, from_json
+
+
+    sarif_log_dict = {
+        "runs": [
+            {
+                "tool": {"driver": {"name": "My Static Analyzer", "version": "1.0.0"}},
+                "results": [
+                    {
+                        "message": {"text": "Use of uninitialized variable 'x'"},
+                        "ruleId": "R001",
+                    }
+                ],
+            }
+        ],
+        "version": "2.1.0",
+    }
+
+    print(from_dict(sarif_log_dict))
+    print(from_json(json.dumps(sarif_log_dict)))
 
 Generation
 ==========
